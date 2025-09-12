@@ -108,8 +108,9 @@ curl -X POST "http://localhost:8000/detect/" \
 
 #### Example Response (JSON)
 
-```json
-{ 
+```
+
+{
   'model': 'yolov5'
   'image_filename': 'output1.jpg',
   'num_detections': 1,
@@ -122,6 +123,7 @@ curl -X POST "http://localhost:8000/detect/" \
       154.2536163330078],
     'area': 759.1640462875366}]
 }
+
 ```
 
 ## 📚 References
