@@ -109,22 +109,18 @@ curl -X POST "http://localhost:8000/detect/" \
 #### Example Response (JSON)
 
 ```json
-{
-  "model": "yolov5",
-  "detections": [
-    {
-      "class_id": 0,
-      "class_name": "person",
-      "confidence": 0.89,
-      "bbox": [34, 57, 120, 150]
-    },
-    {
-      "class_id": 2,
-      "class_name": "car",
-      "confidence": 0.76,
-      "bbox": [200, 80, 340, 200]
-    }
-  ]
+{ 
+  'model': 'yolov5'
+  'image_filename': 'output1.jpg',
+  'num_detections': 1,
+  'detections': [{'class_id': 2,
+    'class_name': 'car',
+    'confidence': 0.9010381102561951,
+    'bbox': [170.5826416015625,
+      128.5685577392578,
+      200.1392822265625,
+      154.2536163330078],
+    'area': 759.1640462875366}]
 }
 ```
 
